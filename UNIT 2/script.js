@@ -105,3 +105,31 @@ btnSix.onclick = function() {
   inputSixTwo.value = '';
 }
 
+//14
+let inputSeven = document.querySelector('.input-seven'); 
+let btnSeven = document.querySelector('.btn-seven');
+
+btnSeven.onclick = function() {
+  inputSeven.value = 'hello';
+}
+
+//15
+let y = document.querySelector('.input-eight');
+y.style.border = '2px solid red'
+
+//16
+let inputNine = document.querySelector('.input-nine'); 
+let inputNineTwo = document.querySelector('.input-nine-two');
+let btnNine = document.querySelector('.btn-nine');
+let sixteen = document.querySelector('.sixteen');
+
+btnNine.onclick = function() {
+  sixteen.innerHTML = +inputNine.value + +inputNineTwo.value;
+  inputNine.value = '';
+  inputNineTwo.value = '';
+}
+
+
+
+
+
