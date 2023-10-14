@@ -129,6 +129,55 @@ btnNine.onclick = function() {
   inputNineTwo.value = '';
 }
 
+//17
+let inputTen = document.querySelector('.input-ten');
+let btnTen = document.querySelector('.btn-ten');
+let seventeen = document.querySelector('.seventeen');
+
+btnTen.onclick = function() {
+  // Получите значение элемента ввода и преобразуйте его в число
+  let inputValueTen = parseInt(inputTen.value);
+  seventeen.innerHTML = inputValueTen;
+}
+
+//18
+let inputEleven = document.querySelector('.input-eleven');
+let btnEleven = document.querySelector('.btn-eleven');
+let eighteen = document.querySelector('.eighteen');
+
+btnEleven.onclick = function() {
+  // Получите значение элемента ввода и преобразуйте его в число
+  let inputValueEleven = parseFloat(inputEleven.value);
+  eighteen.innerHTML = inputValueEleven;
+}
+
+//19
+let inputTwelve = document.querySelector('.input-twelve');
+let inputTwelveTwo = document.querySelector('.input-twelve-two');
+let btnTwelve = document.querySelector('.btn-twelve');
+let nineteen = document.querySelector('.nineteen');
+
+btnTwelve.onclick = function () {
+
+  let inputValueTwelve = parseInt(inputTwelve.value);
+  let inputValueTwelveTwo = parseInt(inputTwelveTwo.value);
+
+  nineteen.innerHTML = inputValueTwelve - inputValueTwelveTwo;
+}
+
+//20
+let inputThirteen = document.querySelector('.input-thirteen');
+let inputThirteenTwo = document.querySelector('.input-thirteen-two');
+let inputThirteenThree = document.querySelector('.input-thirteen-three');
+let inputThirteenFour = document.querySelector('.input-thirteen-four');
+let btnThirteen = document.querySelector('.btn-thirteen');
+let twenty = document.querySelector('.twenty');
+
+btnThirteen.onclick = function() {
+  console.log(1231)
+  let finaly = 'Уважаемый ' + inputThirteen.value + ' ' + inputThirteenTwo.value + ' ваш возраст ' + inputThirteenThree.value + ' года, по професси вы ' + inputThirteenFour.value;
+  twenty.innerHTML = finaly;
+}
 
 
 
