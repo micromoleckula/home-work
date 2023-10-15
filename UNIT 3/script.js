@@ -24,8 +24,8 @@ b2.onclick = () => {
   let a211 = parseFloat(a21.value);
   let a222 = parseFloat(a22.value);
   if (a211 > a222) {
-    out2.innerHTML = a21;
+    out2.innerHTML = a21.value;
   } else {
-    out2.innerHTML = a22;
+    out2.innerHTML = a22.value;
   }
 }
