@@ -164,11 +164,10 @@ b10.onclick = () => {
 
 //11
 let sel11 = document.querySelector('.select-11');
-let b11 =  document.querySelector('.b-11');
 let out11 = document.querySelector('.out-11');
 let out111 = document.querySelector('.out-11');
 
-b11.onclick = () => {
+function updateOutput11() {
   let num11 = parseFloat(sel11.value);
   switch (num11) {
     case 1:
@@ -181,6 +180,7 @@ b11.onclick = () => {
       out11.innerHTML = sel11.value;
       break;
   }
-  out111.innerHTML = sel11.options[sel11.selectedIndex].text;
 }
+
+//12
 
