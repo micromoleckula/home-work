@@ -165,7 +165,6 @@ b10.onclick = () => {
 //11
 let sel11 = document.querySelector('.select-11');
 let out11 = document.querySelector('.out-11');
-let out111 = document.querySelector('.out-11');
 
 function updateOutput11() {
   let num11 = parseFloat(sel11.value);
@@ -183,4 +182,11 @@ function updateOutput11() {
 }
 
 //12
+let i12 = document.querySelector('.i-12');
+let b12 =  document.querySelector('.b-12');
+let out12 = document.querySelector('.out-12');
 
+
+b12.onclick = () => {
+  out12.innerHTML = typeof(i12.value);
+}
