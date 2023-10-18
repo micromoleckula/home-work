@@ -188,5 +188,74 @@ let out12 = document.querySelector('.out-12');
 
 
 b12.onclick = () => {
-  out12.innerHTML = typeof(i12.value);
+  out12.innerHTML = typeof(parseFloat(i12.value));
+}
+
+//13
+let i13 = document.querySelector('.i-13');
+let b13 =  document.querySelector('.b-13');
+let out13 = document.querySelector('.out-13');
+
+
+b13.onclick = () => {
+  out13.innerHTML = typeof(i13.value);
+}
+
+//14
+let b14 =  document.querySelector('.b-14');
+let result;
+let out14 = document.querySelector('.out-14');
+
+b14.onclick = () => {
+
+  let i14 = parseFloat(document.querySelector('.i-14').value);
+  let i141 = parseFloat(document.querySelector('.i-141').value);
+  let operator = document.querySelector('.select-14').value;
+
+  switch (operator) {
+    case '+':
+      result = i14 + i141;
+      break;
+    case '-':
+      result = i14 - i141;
+      break;
+    case '*':
+      result = i14 * i141;
+      break;
+    case '/':
+      if (i141 !== 0) { //проверка на то что бы не делилось на ноль 
+        result = i14 / i141;
+      } else {
+        result = 'не делим на ноль ало';
+      }
+      break;
+    default:
+      result = 'инвалид оператор зроз';
+      break;
+  }
+
+  document.querySelector('.out-14').innerHTML = result;
+}
+
+//15 
+let b15 = document.querySelector('.b-15');
+
+b15.onclick = function () {
+
+  let sel15 = document.querySelector('.sel-15').value;
+  let sel151 = document.querySelector('.sel-151').value;
+  let sel152 = document.querySelector('.sel-152').value;
+  let result15;
+
+  switch (sel152) {
+    case '&&':
+      result15 = sel15 && sel151;
+      break;
+    
+   case '||':
+      result15 = sel15 || sel151;
+      break;
+  }
+
+  document.querySelector('.out-15').innerHTML = result15;
 }
