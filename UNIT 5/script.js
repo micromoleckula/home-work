@@ -58,7 +58,26 @@ document.querySelector('.btn-6').onclick = () => {
   console.log(true)
   for (let i = 0; i < 6; i += 1) {
     out6 += '******<br>';
-    document.querySelector
   }
   document.querySelector('.out-6').innerHTML = out6;
+}
+
+//7
+let out7 = ' ';
+document.querySelector('.btn-7').onclick = () => {
+  console.log(true)
+  let i7 = document.querySelector('.i-7').value;
+  for (let i = i7; i > -1; i -= 1) {
+    out7 += i + ' ' ;
+  }
+  document.querySelector('.out-7').innerHTML = out7;
+}
+
+//8
+document.querySelector('.btn-8').onclick = () => {
+  console.log(true)
+  document.querySelector('.out-8').innerHTML = '<input type = "text" value = " " class = "i-81">' + '<br>' + '<div class = "out-81"></div>' + '<button class = "b-81">Push</button>';
+  document.querySelector('.b-81').onclick = () => {
+    document.querySelector('.out-81').innerHTML = document.querySelector('.i-81').value;
+  }
 }
