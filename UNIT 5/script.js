@@ -81,3 +81,34 @@ document.querySelector('.btn-8').onclick = () => {
     document.querySelector('.out-81').innerHTML = document.querySelector('.i-81').value;
   }
 }
+
+//9
+let out9 = '';
+document.querySelector('.b-9').onclick = () => {
+  let i91 = parseInt(document.querySelector('.i-91').value); 
+  let i92 = parseInt(document.querySelector('.i-92').value);
+  out9 = '';
+  if (i91 > i92) {
+    for (let i = i92; i < i91; i += 1) {
+      out9 += i + ' ';
+    }
+  } else {
+    for (let i = i91; i < i92; i += 1) {
+      out9 += i + ' ';
+    }
+  }
+  document.querySelector('.out-9').innerHTML = out9;
+}
+
+//10
+let out10 = '';
+document.querySelector('.b-10').onclick = () => {
+  for (let i = 1950; i < 2001; i += 1) {
+    if (i % 2 == 0) {
+      out10 += i + " ";
+    }
+  }
+  document.querySelector('.out-10').innerHTML = out10;
+}
+
+//11
