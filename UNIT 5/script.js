@@ -112,3 +112,21 @@ document.querySelector('.b-10').onclick = () => {
 }
 
 //11
+let out111 = '';
+document.querySelector('.b-11').onclick = () => {
+  let out11 = document.querySelectorAll('.out-11');
+  console.log(out11.length)
+  for ( let i = 0; i < out11.length; i++) {
+    out111 += out11[i].textContent + ' ';
+  }
+  document.querySelector('.out-111').innerHTML = out111;
+}
+
+//12
+document.querySelector('.b-12').onclick = () => {
+  let out12 = document.querySelectorAll('.out-12');
+  console.log(out12.length);
+  for (let i = 0; i < out12.length; i++) {
+    out12[i].style.backgroundColor = 'red';
+  }
+}
