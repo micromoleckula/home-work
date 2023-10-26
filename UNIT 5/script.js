@@ -123,10 +123,18 @@ document.querySelector('.b-11').onclick = () => {
 }
 
 //12
-document.querySelector('.b-12').onclick = () => {
+ {
   let out12 = document.querySelectorAll('.out-12');
   console.log(out12.length);
   for (let i = 0; i < out12.length; i++) {
     out12[i].style.backgroundColor = 'red';
+  }
+}
+
+//13
+document.querySelector('.b-13').onclick = () => {
+  let i13 = document.querySelector('.i-13').value;
+  for (let i = 0; i < ; i++) {
+    
   }
 }
