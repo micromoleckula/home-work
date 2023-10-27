@@ -123,7 +123,7 @@ document.querySelector('.b-11').onclick = () => {
 }
 
 //12
- {
+document.querySelector('.b-12').onclick = () =>{
   let out12 = document.querySelectorAll('.out-12');
   console.log(out12.length);
   for (let i = 0; i < out12.length; i++) {
@@ -131,10 +131,39 @@ document.querySelector('.b-11').onclick = () => {
   }
 }
 
-//13
+//13 
+let elem13 = '';
 document.querySelector('.b-13').onclick = () => {
-  let i13 = document.querySelector('.i-13').value;
-  for (let i = 0; i < ; i++) {
-    
+  let i13 = document.querySelectorAll('.i-13');
+  for (let i = 0; i < i13.length; i++) {
+    i13[i].value = (i + 1).toString();
+    elem13 += i13[i].value + ' ';
   }
+  document.querySelector('.out-13').innerHTML = elem13;
+}
+
+//14
+document.querySelector('.b-14').onclick = () => {
+  let i14 = document.querySelectorAll('.i-14');
+  let elem14 = ' ';
+  
+  for (let i = 0; i < i14.length; i++) {
+    if (i14[i].value !== ' ' && i14[i].checked) {
+      elem14 += i14[i].value + ' ';
+    }
+  }
+  document.querySelector('.out-14').innerHTML = elem14;
+}
+
+//15
+let elem15 = '';
+document.querySelector('.b-15').onclick = () => {
+  elem15 = '';
+  for (let i = 10; i >= 0; i--) {
+    elem15 += i + ' ';
+    if (i > 0) {
+      elem15 += (10 - i) + ' ';
+    }
+  }
+  document.querySelector('.out-15').innerHTML = elem15;
 }
