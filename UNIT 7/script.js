@@ -6,8 +6,9 @@ one()
 let a 
 function two() {
   console.log('work')
-  a = 1
-  return 55;
+  let b = 2;
+  a = 1;
+  return a*b;
 }
 
 two()
