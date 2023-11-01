@@ -3,13 +3,20 @@ function one() {
 }
 
 one()
-let a 
+let a = 7;
+let b = 8;
+
+
 function two() {
-  console.log('work')
-  let b = 2;
-  a = 1;
+  console.log(a * b);
   return a*b;
 }
 
-two()
-console.log(a)
+let c = 10*two()
+
+
+function multi(x, y) {
+  return x*y;
+}
+
+console.log(multi(4, b))
