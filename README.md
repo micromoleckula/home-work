@@ -24,6 +24,7 @@ Done
 
 7	
 Функции и все о них
+Done
 
 8	
 Цикл While, Do While
