@@ -164,34 +164,72 @@ document.querySelector('.b-10').onclick = t10;
 
 11
 function t11() {
-
+  let outStr11 = '';
+  let div11 = document.querySelectorAll('.div-11');
+  let i11 = 0;
+  while (i11 < div11.length) {
+    outStr11 += div11[i11].textContent + ' '; 
+    i11++;
+  }
+  document.querySelector('.out-11').innerHTML = outStr11;
 }
 document.querySelector('.b-11').onclick = t11;
 
 
 12
 function t12() {
-
+  let outStr12 = '';
+  let div12 = document.querySelectorAll('.div-12');
+  let i12 = 0;
+  while (i12 < div12.length) {
+    outStr12 += div12[i12].style.backgroundColor = 'orange';
+    i12++;
+  }
 }
 document.querySelector('.b-12').onclick = t12;
 
 
 13
 function t13() {
-
+  let outStr13 = '';
+  let i13 = document.querySelectorAll('.i-13');
+  let a13 = 1;
+  while (a13 <= i13.length) {
+    outStr13 += a13 + ' ' + i13[a13 - 1].value;
+    outStr13 += '<br>';
+    a13++;
+  }
+  document.querySelector('.out-13').innerHTML = outStr13;
 }
 document.querySelector('.b-13').onclick = t13;
 
 
 14
 function t14() {
-
+  let outStr14 = '';
+  let i14 = document.querySelectorAll('.i-14');
+  let a14 = 0;
+  while (a14 < i14.length) {
+    if (i14[a14].checked) {
+      outStr14 += i14[a14].value;
+    }
+    a14++;
+  }
+  document.querySelector('.out-14').innerHTML = outStr14;
 }
 document.querySelector('.b-14').onclick = t14;
 
 
 15
 function t15() {
-
+  let outStr15 = '';
+  let a15 = 11;
+  let a155 = -1;
+  while (a15 > 0) {
+    a15--;
+    a155++;
+    outStr15 += ' ' + a15 + ' ' + a155;
+  }
+  document.querySelector('.out-15').innerHTML = outStr15;
 }
 document.querySelector('.b-15').onclick = t15;
