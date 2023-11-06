@@ -1,96 +1,59 @@
-1	
-Стартуем и пишем первую программу
-Done
+1 Стартуем и пишем первую программу Done
 
-2	
-Основы ввода данных
-Done
+2 Основы ввода данных Done
 
-3	
-Оператор If, else, switch case - выбор в JavaScript
-Done
+3 Оператор If, else, switch case - выбор в JavaScript Done
 
-4	
-Работаем с формами: input, range, textarea, checkbox...
-Done
+4 Работаем с формами: input, range, textarea, checkbox... Done
 
-5	
-Циклы в JavaScript (часть 1)
-Done
+5 Циклы в JavaScript (часть 1) Done
 
-6	
-Вложенные циклы в JavaScript (часть 2)
-Done
+6 Вложенные циклы в JavaScript (часть 2) Done
 
-7	
-Функции и все о них
-Done
+7 Функции и все о них Done
 
-8	
-Цикл While, Do While
+8 Цикл While, Do While Done
 
-9	
-Работаем с DOM
+9 Работаем с DOM
 
-10	
-Массивы в JavaScript
+10 Массивы в JavaScript
 
-11	
-Добавление и удаление элементов в массиве, pop, push,splice
+11 Добавление и удаление элементов в массиве, pop, push,splice
 
-12	
-Двумерные массивы
+12 Двумерные массивы
 
-13	
-Ассоциативный массив (объект) в JavaScript
+13 Ассоциативный массив (объект) в JavaScript
 
-14	
-Практика по массивам - получаем прогноз погоды по API
+14 Практика по массивам - получаем прогноз погоды по API
 
-15	
-Set в JavaScript
+15 Set в JavaScript
 
-16	
-Перебор массивов: for, for in, for of
+16 Перебор массивов: for, for in, for of
 
-17	
-Методы массивов: map, filter ( часть 1)
+17 Методы массивов: map, filter ( часть 1)
 
-18	
-Методы массивов: join, split, forEach ( часть 2)
+18 Методы массивов: join, split, forEach ( часть 2)
 
-19	
-События мыши в JavaScript
+19 События мыши в JavaScript
 
-20	
-События клавиатуры в JavaScript
+20 События клавиатуры в JavaScript
 
-21	
-Краткий обзор touch событий
+21 Краткий обзор touch событий
 
-22	
-Обрабатываем ошибки с помощью Try Catch
+22 Обрабатываем ошибки с помощью Try Catch
 
-23	
-LocalStorage. Сохраняем все
+23 LocalStorage. Сохраняем все
 
-24	
-Немного теории - работа с POST, GET запросами
+24 Немного теории - работа с POST, GET запросами
 
-25	
-AJAX - асинхронный JavaScript
+25 AJAX - асинхронный JavaScript
 
-26	
-Учим FETCH на практике
+26 Учим FETCH на практике
 
-27	
-Работаем с промисами (Promise)
+27 Работаем с промисами (Promise)
 
-28	
-ООП в ES6
+28 ООП в ES6
 
-29	
-Бонусы - замыкания
+29 Бонусы - замыкания
 
-30	
-Бонус - Рекурсия
+30 Бонус - Рекурсия
