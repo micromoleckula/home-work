@@ -102,3 +102,25 @@ b8.onclick = function () {
 }
 
 9
+let out9 = document.querySelectorAll('.out-9');
+
+function f9() {
+  this.classList.add('bg-9');
+}
+
+for (let i = 0; i < out9.length; i++) {
+  out9[i].addEventListener('click', f9);
+}
+
+10
+let out10 = document.querySelectorAll('.out-10');
+
+function f10() {
+  this.classList.toggle('bg-10');
+}
+
+for (let i = 0; i < out10.length; i++) {
+  out10[i].addEventListener('click', f10);
+}
+
+11
