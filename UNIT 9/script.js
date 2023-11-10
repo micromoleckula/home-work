@@ -203,6 +203,31 @@ b18.onclick = function () {
   let out18 = document.querySelector('.out-18');
   let newElement18 = document.createElement('div');
   newElement18.classList.add('bg-13');
-  newElement18.getAttribute = p18;
+  newElement18.innerHTML = p18.getAttribute('data-b');
   out18.prepend(newElement18);
+}
+
+19
+let b19 = document.querySelector('.b-19');
+b19.onclick = function () {
+  let p19 = document.querySelectorAll('.p-19');
+  let out19 = document.querySelector('.out-19');
+  let newElement19 = document.createElement('div');
+  // newElement19.classList.add('bg-13');
+  let elem19 = '';
+  let i19 = 0;
+  while (p19.length > i19) {
+    elem19 += p19[i19].getAttribute('data-b') + ' ';
+    i19++;
+  }
+  newElement19.innerHTML = elem19 ;
+  out19.prepend(newElement19);
+}
+
+20
+let b20 = document.querySelector('.b-20');
+b20.onclick = function () {
+  let out20 = document.querySelector('.out-20');
+  out20.setAttribute('title', 'go');
+  console.log(out20.getAttribute('title'));
 }
