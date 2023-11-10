@@ -124,3 +124,85 @@ for (let i = 0; i < out10.length; i++) {
 }
 
 11
+let b11 = document.querySelector('.b-11');
+b11.onclick = function () {
+  let div11 = document.createElement('div');
+  div11.innerHTML = 'Pisun';
+  div11.classList.add('bg-11');
+  document.body.appendChild(div11);
+}
+
+12 
+let b12 = document.querySelector('.b-12');
+let out12 = document.querySelector('.out-12');
+b12.onclick = function () {
+  let div12 = document.createElement('div');
+  div12.innerHTML = 'Pisun';
+  div12.classList.add('bg-12');
+  out12.appendChild(div12);
+}
+
+13
+let b13 = document.querySelector('.b-13');
+let out13 = document.querySelector('.out-13');
+b13.onclick = function () {
+  let div13 = document.createElement('div');
+  div13.innerHTML = 'Pisun';
+  div13.classList.add('bg-13');
+  out13.appendChild(div13);
+}
+
+out13.onclick = function () {
+  out13.innerHTML = 'Jopa'
+}
+
+14
+let b14 = document.querySelector('.b-14');
+b14.onclick = function () {
+  let out14 = document.querySelector('.out-14');
+  let newElement14 = document.createElement('div');
+  div14.classList.add('bg-13');
+  newElement14.innerHTML = 'text';
+  out14.prepend(newElement14);
+}
+
+15
+let b15 = document.querySelector('.b-15');
+b15.onclick = function () {
+  let out151 = document.querySelector('.out-151');
+  let newElement15 = document.createElement('div');
+  newElement15.classList.add('bg-13');
+  newElement15.innerHTML = 'text';
+  out151.before(newElement15);
+}
+
+16
+let b16 = document.querySelector('.b-16');
+b16.onclick = function () {
+  let out161 = document.querySelector('.out-161');
+  let newElement16 = document.createElement('div');
+  newElement16.classList.add('bg-13');
+  newElement16.innerHTML = 'text';
+  out161.after(newElement16);
+}
+
+17
+let b17 = document.querySelector('.b-17');
+b17.onclick = function () {
+  let out17 = document.querySelector('.out-17');
+  let newElement17 = document.createElement('div');
+  newElement17.classList.add('bg-13');
+  newElement17.innerHTML = 'text17777777777777';
+  out17.replaceWith(newElement17);
+}
+
+18
+let b18 = document.querySelector('.b-18');
+b18.onclick = function () {
+  let p18 = document.querySelector('.p-18');
+  let out18 = document.querySelector('.out-18');
+  let newElement18 = document.createElement('div');
+  newElement18.classList.add('bg-13');
+  newElement18.getAttribute = p18;
+  out18.prepend(newElement18);
+}
