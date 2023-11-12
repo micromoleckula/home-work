@@ -14,7 +14,7 @@
 
 8 Цикл While, Do While Done
 
-9 Работаем с DOM
+9 Работаем с DOM Done
 
 10 Массивы в JavaScript
 

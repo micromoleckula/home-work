@@ -1,34 +1,53 @@
-// let a = 'Иван';
-// let b = '37';
-// let z7 = 'Овен';
+1
+let ar1 = ['chinazes', false, 'urde', 34, true, 'sanhizas', 21];
+document.querySelector('.b-1').onclick = function () {
+  document.querySelector('.out-1').innerHTML = ar1;
+}
 
-// let c = ['Ivan', 37, 'oven'];
+3
+let ar3 = ['chinazes', false, 'urde', 34, true, 'sanhizas', 21];
+document.querySelector('.b-3').onclick = function () {
+  document.querySelector('.out-3').innerHTML = ar3.length;
+}
 
-// let d = [];
+4
+let ar4 = ['chinazes', 'pensil', 'urde', 34, true, 'sanhizas', 21, 34, 'komtsumon', 'kakashka'];
+document.querySelector('.b-4').onclick = function () {
+  autist4 = ar4[0] + ' ' + ar4[3] + ' ' + ar4[8];
+  document.querySelector('.out-4').innerHTML = autist4;
+}
 
-// console.log(c);
-// console.log(c.length)
+5
+let ar5 = [3, 1, 2, 3, 4, 5, 6];
+document.querySelector('.b-5').onclick = function () {
+  autist5 = ar5[0] + ar5[2] + ar5[3];
+  document.querySelector('.out-5').innerHTML = autist5;
+}
 
-// let ua = {
-//   name: 'Dmitry',
-//   age: 18,
-//   work: 'pc-service',
-//   city: 'Dnipro',
-// }
+6
+let ar6 = ['Dmitry', 'Telets', 6, 5];
+document.querySelector('.b-6').onclick = function () {
+  let i = 0;
+  let aut6 = '';
+  while (ar6.length > i) {
+    aut6 += ar6[i] + ' ';
+    i++;
+  }
+  document.querySelector('.out-6').innerHTML = aut6;
+}
 
-// c[1] = 'Peis'
+7
+let ar7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
-// console.log(ua)
-
-
-let a = [1, 2, 3, 4];
-console.log(a);
-
-
-let t = a[0];
-a[0] = a[a.length - 1];
-a[a.length - 1] = t
-
-
-
-console.log(a);
+document.querySelector('.b-7').onclick = function () {
+  ar7[5] = 'italy';
+  ar7[6] = 'turkey';
+  ar7[7] = 'vietnam';
+  let i = 0;
+  let aut7 = '';
+  while (ar7.length > i) {
+    aut7 += ar7[i] + ' ';
+    i++;
+  }
+  document.querySelector('.out-7').innerHTML = aut7;
+}
