@@ -192,3 +192,41 @@ document.querySelector('.b-17').onclick = function () {
   }
   document.querySelector('.out-17').innerHTML = count;
 }
+
+18
+let ar18 =  [15,24,13,78,21,4,45,67];
+
+document.querySelector('.b-18').onclick = function () {
+  let max = ar18[0];
+  for (let i = 0; i < ar18.length; i++) {
+    if (ar18[i] > max) {
+      max = ar18[i]
+    }
+  }
+  document.querySelector('.out-18').innerHTML = 'max: ' + max;
+}
+
+19
+let ar19 =  [15,424,313,78,241,4,45,67];
+
+document.querySelector('.b-19').onclick = function () {
+  let min = ar19[0]
+  for (let i = 0; i < ar19.length; i++) {
+    if (ar19[i] < min) {
+      min = ar19[i]
+    }
+  }
+document.querySelector('.out-19').innerHTML = 'min: ' + min;
+}
+
+20
+let ar20 =  [1, 2];
+
+document.querySelector('.b-20').onclick = function () {
+  let count = 0;
+  for (let i = 0; i < ar20.length; i++) {
+    count = count + ar20[i];
+  }
+  
+  document.querySelector('.out-20').innerHTML = count;
+}
