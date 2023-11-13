@@ -51,3 +51,144 @@ document.querySelector('.b-7').onclick = function () {
   }
   document.querySelector('.out-7').innerHTML = aut7;
 }
+
+8
+let ar8 = ['china', 'india', 'brazil', 'japan', 'egypt'];
+
+document.querySelector('.b-8').onclick = function () {
+  ar8[2] = 3.14;
+  ar8[3] = 17;
+  ar8[5] = 5;
+  let i = 0;
+  let aut8 = '';
+  while (ar8.length > i) {
+    aut8 += ar8[i] + ' - ';
+    i++;
+  }
+  document.querySelector('.out-8').innerHTML = aut8;
+  document.querySelector('.out-8-1').innerHTML = ar8.length;
+}
+
+9
+let ar9 = [100, 200, 300, 400, 700, 121];
+
+document.querySelector('.b-9').onclick = function () {
+  let i = 0;
+  let aut9 = '';
+  while (ar9.length > i) {
+    aut9 = ar9[i];
+    i++;
+  }
+  document.querySelector('.out-9').innerHTML = aut9;
+}
+
+10
+let ar10 = [100, 200, 300, 400, 700, 121];
+
+document.querySelector('.b-10').onclick = function () {
+  let i = 0;
+  let aut10 = '';
+  while (ar10.length > i) {
+    aut10 =ar10[0] + ' ' + ar10[i] ;
+    i++;
+  }
+  document.querySelector('.out-10').innerHTML = aut10;
+}
+
+11
+let ar11 = [2,3,4,5,6,7];
+
+document.querySelector('.b-11').onclick = function () {
+  let a = ar11[2];
+  ar11[2] = ar11[4];
+  ar11[4] = a;
+  document.querySelector('.out-11').innerHTML = ar11;
+}
+document.querySelector('.out-11').innerHTML = ar11;
+
+12
+let ar12 = ['test', 'west', 'list', 'class', 'best'];
+
+document.querySelector('.b-12').onclick = function () {
+  let temp = ar12[0];
+  ar12[0] = ar12[ar12.length - 1];
+  ar12[ar12.length - 1] = temp;
+  document.querySelector('.out-12').innerHTML = ar12;
+}
+
+13
+let ar13 = ['test', 'west', 'list', 'class', 'best'];
+
+document.querySelector('.b-13').onclick = function () {
+  let aut13 = '';
+  let i = 0;
+  while (ar13.length > i) {
+    aut13 += i + ' ' + ar13[i] + ' ';
+    i++
+  }
+  document.querySelector('.out-13').innerHTML = aut13;
+}
+
+14
+let ar14 = [1, 2, 3, 'hello', 66];
+
+document.querySelector('.b-14').onclick = function () {
+  let aut14 = '';
+  let i = ar14.length - 1;
+  while (i >= 0) {
+    aut14 += ar14[i] + ' ';
+    i--
+  }
+  document.querySelector('.out-14').innerHTML = aut14;
+}
+
+15
+let ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+
+document.querySelector('.b-15').onclick = function () {
+  let i = 0;
+  let aut15 = '';
+  while (ar15.length > i) {
+    if (ar15[i] > 0) {
+      aut15 += ar15[i] + ' ';
+    }
+    i++;
+  }
+  document.querySelector('.out-15').innerHTML = aut15;
+}
+
+16
+let ar16 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+let ar16_odd = [];
+let ar16_even = [];
+
+document.querySelector('.b-16').onclick = function () {
+  let i = 0;
+
+  while (ar16.length > i) {
+    if (ar16[i] % 2 === 0) {
+      ar16_odd.push(ar16[i]);
+    } else {
+      ar16_even.push(ar16[i]);
+    }
+    i++;
+  }
+
+  document.querySelector('.out-16-odd').innerHTML = ar16_odd.join(' ');
+  document.querySelector('.out-16-even').innerHTML = ar16_even.join(' ');
+}
+
+17
+let ar17 =  [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
+
+document.querySelector('.b-17').onclick = function () {
+  let i = 0;
+  let count = 0
+  while (ar17.length > i) {
+    if (ar17[i] > 3) {
+      count++
+    }
+    i++;
+  }
+  document.querySelector('.out-17').innerHTML = count;
+}
