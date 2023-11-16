@@ -16,7 +16,7 @@
 
 9 Работаем с DOM Done
 
-10 Массивы в JavaScript
+10 Массивы в JavaScript Done
 
 11 Добавление и удаление элементов в массиве, pop, push,splice
 
