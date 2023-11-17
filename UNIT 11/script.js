@@ -55,9 +55,35 @@ function f5() {
 
 document.querySelector('.b-5').onclick = f5;
 
+6
+d6 = ['test', 5, 12];
 
+function f6() {
+  let i6 = document.querySelector('.i-6').value;
+  
+  if (i6 !== "") {
+    d6[d6.length] = i6;
+    showArr('.out-6', d6);
+  } else {
+    alert("Введите значение");
+  }
+}
 
+document.querySelector('.b-6').onclick = f6;
 
+7
+d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
+
+// function f6() {
+//   let i6 = document.querySelector('.i-6').value;
+  
+//   if (i6 !== "") {
+//     d6[d6.length] = i6;
+//     showArr('.out-6', d6);
+//   } else {
+//     alert("Введите значение");
+//   }
+// }
 
 
 
