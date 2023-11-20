@@ -89,7 +89,7 @@ document.querySelector('.b-10').onclick = function () {
   let i = 0;
   let aut10 = '';
   while (ar10.length > i) {
-    aut10 =ar10[0] + ' ' + ar10[i] ;
+    aut10 = ar10[0] + ' ' + ar10[i] ;
     i++;
   }
   document.querySelector('.out-10').innerHTML = aut10;
