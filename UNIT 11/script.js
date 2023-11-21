@@ -1,8 +1,9 @@
-let d1 = [32, 'best', 66, 'best'];
-
 function showArr(elementClass, array) {
   document.querySelector(elementClass).textContent = array;
 }
+
+let d1 = [32, 'best', 66, 'best'];
+
 
 function f1() {
   let i1 = document.querySelector('.i-1').value;
@@ -153,10 +154,25 @@ document.querySelector('.b-12').onclick = f12;
 
 13
 let d13 = [6, 0, 22, 1, 4, 76];
+let d133 = [];
+
+let copyDirection = true; // true: d13 to d133, false: d133 to d13
 
 function f13() {
+  if (copyDirection) {
+    d133 = [];
+    for (let i = d13.length - 1; i >= 0; i--) {
+      d133.push(d13[i]);
+    }
+  } else {
+    d13 = [];
+    for (let i = d133.length - 1; i >= 0; i--) {
+      d13.push(d133[i]);
+    }
+  }
 
-  showArr('.out-13', d13);
+  copyDirection = !copyDirection; // Toggle the copy direction
+  showArr('.out-13', copyDirection ? d13 : d133);
 }
 
 document.querySelector('.b-13').onclick = f13;
@@ -165,6 +181,14 @@ document.querySelector('.b-13').onclick = f13;
 let d14 = [];
 
 function f14() {
+  let i14 = parseInt(document.querySelector('.i-14').value);
+  let i = 0;
+
+  while (i < i14) {
+    d14.push(1);
+    i++;
+    console.log(true);
+  }
 
   showArr('.out-14', d14);
 }
@@ -175,6 +199,16 @@ document.querySelector('.b-14').onclick = f14;
 let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
+  let i15 = document.querySelector('.i-15').value.trim();
+
+  if (i15 !== '') {
+    // Проверяем, есть ли значение в массиве
+    if (d15.includes(parseInt(i15))) {
+      alert("Элемент уже есть в массиве");
+    } else {
+      d15.push(parseInt(i15));
+    }
+  }
 
   showArr('.out-15', d15);
 }
@@ -187,7 +221,7 @@ let d161 = [5,6,7,8,9];
 let d162 = [23,24,56,87];
 
 function f16() {
-
+  d16 = d16.concat(d161, d162);
   showArr('.out-16', d16);
 }
 
@@ -199,7 +233,16 @@ let d171=['a', 'b', 'c', 'd'];
 let d172=[1,2,3,4,5];
 
 function f17() {
-
+  let i = 0;
+  while (d171.length > i) {
+    d17.push(d171[i])
+    i++;
+  }
+  let i2 = 0;
+  while (d172.length > i2) {
+    d17.push(d172[i2])
+    i2++;
+  }
   showArr('.out-17', d17);
 }
 
@@ -209,18 +252,19 @@ document.querySelector('.b-17').onclick = f17;
 let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
 
 function f18() {
-
-  showArr('.out-18', d18);
+  let i18 = document.querySelector('.i-18').value;
+  let d188 = d18.includes(i18);
+  showArr('.out-18', d188);
 }
 
 document.querySelector('.b-18').onclick = f18;
 
 19
 let d19 = ['Your','payment','method','will','automatically','be','charged','in','advance','every' ];
-
+let i19 = document.querySelector('.i-19').value;
 function f19() {
-
-  showArr('.out-19', d19);
+  
+  showArr('.out-19', d19.maxString());
 }
 
 document.querySelector('.b-19').onclick = f19;
