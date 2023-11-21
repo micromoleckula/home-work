@@ -256,6 +256,5 @@ b15.onclick = function () {
       result15 = sel15 || sel151;
       break;
   }
-
   document.querySelector('.out-15').innerHTML = result15;
 }
