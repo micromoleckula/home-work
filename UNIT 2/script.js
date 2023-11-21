@@ -174,6 +174,7 @@ let btnThirteen = document.querySelector('.btn-thirteen');
 let twenty = document.querySelector('.twenty');
 
 btnThirteen.onclick = function() {
+  
   console.log(1231)
   let finaly = 'Уважаемый ' + inputThirteen.value + ' ' + inputThirteenTwo.value + ' ваш возраст ' + inputThirteenThree.value + ' года, по професси вы ' + inputThirteenFour.value;
   twenty.innerHTML = finaly;
