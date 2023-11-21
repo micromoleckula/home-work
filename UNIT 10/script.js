@@ -184,6 +184,7 @@ let ar17 =  [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 document.querySelector('.b-17').onclick = function () {
   let i = 0;
   let count = 0
+  
   while (ar17.length > i) {
     if (ar17[i] > 3) {
       count++
