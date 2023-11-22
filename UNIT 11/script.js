@@ -2,7 +2,7 @@ function showArr(elementClass, array) {
   document.querySelector(elementClass).textContent = array;
 }
 
-let d1 = [32, 'best', 66, 'best'];
+const d1 = [32, 'best', 66, 'best'];
 
 
 function f1() {
@@ -260,11 +260,18 @@ function f18() {
 document.querySelector('.b-18').onclick = f18;
 
 19
-let d19 = ['Your','payment','method','will','automatically','be','charged','in','advance','every' ];
-let i19 = document.querySelector('.i-19').value;
+let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged', 'in', 'advance', 'every'];
+
 function f19() {
-  
-  showArr('.out-19', d19.maxString());
+  let maxString = d19[0];
+
+  for (let i = 1; i < d19.length; i++) {
+    if (d19[i].length > maxString.length) {
+      maxString = d19[i];
+    }
+  }
+
+  showArr('.out-19', maxString);
 }
 
 document.querySelector('.b-19').onclick = f19;
@@ -273,8 +280,11 @@ document.querySelector('.b-19').onclick = f19;
 let d20 = [4,5,6,7,8,9,10];
 
 function f20() {
-
+  d20 = d20.join('')
   showArr('.out-20', d20);
 }
 
 document.querySelector('.b-20').onclick = f20;
+
+
+
