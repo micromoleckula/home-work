@@ -5,34 +5,34 @@ let b = [
   [7, 8, 9],
 ];
 
-// console.log(a, b);
+console.log(a, b);
 
-// console.log('------------')
+console.log('------------')
 
-// for (let i = 0; i < b.length; i++) {
-//   let c = b[i];
-//   for (let k = 0; k < c.length; k++) {
-//     console.log(c[k]);
-//   }
-// }
+for (let i = 0; i < b.length; i++) {
+  let c = b[i];
+  for (let k = 0; k < c.length; k++) {
+    console.log(c[k]);
+  }
+}
 
-// console.log('------------')
+console.log('------------')
 
-// for (let i = 0; i < b.length; i++) {
-//   let c = b[i];
-//   for (let k = c.length - 1; k >= 0; k--) {
-//     console.log(c[k]);
-//   }
-// }
+for (let i = 0; i < b.length; i++) {
+  let c = b[i];
+  for (let k = c.length - 1; k >= 0; k--) {
+    console.log(c[k]);
+  }
+}
 
-// console.log('------------')
+console.log('------------')
 
-// for (let i = 0; i < b.length; i++) {
-//   console.log(b[i]);
-//   console.log(b[i][0]);
-// }
+for (let i = 0; i < b.length; i++) {
+  console.log(b[i]);
+  console.log(b[i][0]);
+}
 
-// console.log('------------')
+console.log('------------')
 let out = '';
 
 for (let i = 0; i < b.length; i++) {
@@ -42,3 +42,11 @@ for (let i = 0; i < b.length; i++) {
 }
 
 document.querySelector('.out').innerHTML = out;
+
+
+
+
+1
+function name(params) {
+  
+}
