@@ -1,3 +1,7 @@
+function showArr(elementClass, array) {
+  document.querySelector(elementClass).textContent = array;
+}
+
 let a = [4, 5, 9];
 let b = [
   [1, 2, 3],
