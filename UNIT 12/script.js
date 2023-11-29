@@ -232,9 +232,7 @@ function f13() {
   let out = '';
   let i = 0;
   let k = 0;
-  while () {
-    
-  }
+  
 document.querySelector('.out-12').innerHTML = out;
 }
 
