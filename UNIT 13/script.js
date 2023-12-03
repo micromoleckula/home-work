@@ -5,7 +5,7 @@
 function f1() {
   let a1 = {
       "one": 15,
-      "two": 16,
+      "two": 'hi',
       "five": 20
   };
   document.querySelector('.out-1').innerHTML = a1.two;
@@ -49,7 +49,7 @@ function f3() {
       "odd": "hi",
       "mix": "mix"
   };
-  // return
+  return a3["odd"]
 }
 
 document.querySelector('.b-3').onclick = () => {
@@ -71,8 +71,12 @@ let a4 = {
   "mix": "mix"
 };
 function f4() {
+  let out = '';
+  for (let key in a4) {
+    out += a4[key] + '<br>'
+  }
 
-  // return out;
+  return out;
 }
 
 document.querySelector('.b-4').onclick = () => {
@@ -85,10 +89,10 @@ document.querySelector('.b-4').onclick = () => {
 
 function f5(arr, block) {
   let out = '';
-  // цикл
-  // формат вывода `${key} : ${arr[key]} <br>`;
-  //
-  // тут вывод в блок block
+  for (let key in arr) {
+    out += arr[key] + '<br>';
+  }
+  document.querySelector(block).innerHTML = out;
 }
 
 // давайте протестируем f5
@@ -111,10 +115,21 @@ let a6 = {
 };
 
 function f6() {
+  let i61 = document.querySelector('.i-61').value;
+  let i62 = document.querySelector('.i-62').value;
 
+  a6[i61] = (a6[i61] || 0) + parseFloat(i62);
+
+  let out = '';
+  for (let key in a6) {
+    out += a6[key] + '<br>';
+  }
+  return out;
 }
 
-document.querySelector('.b-6').onclick = f6;
+document.querySelector('.b-6').onclick = () => {
+  document.querySelector('.out-6').innerHTML = f6();
+};
 
 // Task 7
 // Добавьте input .i-7. При нажатии b-7 выполняете функцию f7. Функция должна получать из i-7 ключ. Если такой ключ есть в a7 то выводить 1 в out-7, если нет - 0.
@@ -124,12 +139,23 @@ let a7 = {
   "e": 22
 };
 
-
 function f7() {
+  let i7 = document.querySelector('.i-7').value;
+  let out = '0';
 
+  for (let key in a7) {
+    if (key === i7) {
+      out = '1';
+      break;  // Exit the loop once a match is found
+    }
+  }
+
+  return out;
 }
 
-document.querySelector('.b-7').onclick = f7;
+document.querySelector('.b-7').onclick = () => {
+  document.querySelector('.out-7').innerHTML = f7();
+};
 
 // Task 8
 // Добавьте input .i-8. При нажатии b-8 выполняете функцию f8. Функция должна выводить значение в out-8, если ключ введенный в i-8 есть в массиве, если нет - 0.
