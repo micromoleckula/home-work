@@ -166,7 +166,14 @@ let a8 = {
 };
 
 function f8() {
+  for (let key in a8) {
+    if (key === i8) {
+      out = '1';
+      break;  // Exit the loop once a match is found
+    }
+  }
 
+  return out;
 }
 
 document.querySelector('.b-8').onclick = f8;
