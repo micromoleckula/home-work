@@ -215,8 +215,8 @@ document.querySelector('.b-9').onclick = () => {
 
 function f10(arr, val) {
 
-  //return true;
-  //return false;
+  // return true;
+  // return false;
 }
 
 document.querySelector('.b-10').onclick = () => {
