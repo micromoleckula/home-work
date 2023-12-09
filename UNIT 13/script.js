@@ -214,9 +214,12 @@ document.querySelector('.b-9').onclick = () => {
 // Давайте напишем полезную функцию f10, которая проверяет есть ли значение в ассоциативном массиве. Фукнция должна возвращать true если есть, и false если нет. Массив и значение передавать функции в качестве параметров.
 
 function f10(arr, val) {
-
-  // return true;
-  // return false;
+  for (let key in arr) {
+    if (arr[key] === val) {
+      return true; // если значение найдено, возвращаем true
+    }
+  }
+  return false; // если значение не найдено, возвращаем false
 }
 
 document.querySelector('.b-10').onclick = () => {
@@ -241,9 +244,21 @@ let a11 = {
 };
 
 function f11() {
+  let i11 = document.querySelector('.i-11').value;
+
+  for (let key in a11) {
+    if (key === i11) {
+      delete a11[key];
+    }
+  }
+
+  // Просто выводим обновленный объект в .out-11
+  document.querySelector('.out-11').textContent = JSON.stringify(a11);
 }
 
-document.querySelector('.b-11').onclick = f11;
+document.querySelector('.b-11').onclick = () => {
+  f11();
+};
 
 // Task 12
 //  При нажатии b-12 выполняете функцию f12. Функция должна получить значение из i-12 и удалить запись из массива a12 с таким значением. После этого вывести массив в out-12. Для вывода используйте функцию f5.
