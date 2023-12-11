@@ -26,6 +26,7 @@ function f2() {
       "five": "hi"
   };
   document.querySelector('.out-2').innerHTML = a2.five;
+  
   return a2["five"]
 }
 
@@ -48,6 +49,7 @@ function f3() {
       "odd": "hi",
       "mix": "mix"
   };
+
   return a3["odd"]
 }
 
@@ -91,6 +93,7 @@ function f5(arr, block) {
   for (let key in arr) {
     out += arr[key] + '<br>';
   }
+
   document.querySelector(block).innerHTML = out;
 }
 
@@ -101,6 +104,7 @@ document.querySelector('.b-5').onclick = () => {
       "one": 1,
       "two": 2
   }
+
   f5(a5, '.out-5');
 }
 
@@ -123,6 +127,7 @@ function f6() {
   for (let key in a6) {
     out += a6[key] + '<br>';
   }
+
   return out;
 }
 
