@@ -277,10 +277,21 @@ let a12 = {
 };
 
 function f12() {
+  let i12 = document.querySelector('.i-12').value;
 
+  for (let key in a12) {
+    if (a12[key] == i12) {
+      delete a12[key];
+    }
+  }
+
+  // Просто выводим обновленный объект в .out-12
+  document.querySelector('.out-12').textContent = JSON.stringify(a12);
 }
 
-document.querySelector('.b-12').onclick = f12;
+document.querySelector('.b-12').onclick = () => {
+  f12();
+};
 
 // Task 13
 // При нажатии b-13 выполняете функцию f13. Функция должна в out-13 выводить сумму значений массива a13 (только числа).
@@ -293,7 +304,9 @@ let a13 = {
 };
 
 function f13() {
-
+  for (let key in a13 ) {
+    
+  }
 }
 
 document.querySelector('.b-13').onclick = f13;
