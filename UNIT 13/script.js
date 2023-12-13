@@ -224,6 +224,7 @@ function f10(arr, val) {
       return true; // если значение найдено, возвращаем true
     }
   }
+  
   return false; // если значение не найдено, возвращаем false
 }
 
