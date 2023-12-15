@@ -11,5 +11,3 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Dnipro,ua&lat={lat}&lon
     
   })
 
-
-//https://openweathermap.org/img/wn/02d@2x.png
