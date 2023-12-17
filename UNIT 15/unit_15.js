@@ -137,7 +137,14 @@ document.querySelector('.b-9').onclick = () => {
 // Task 10
 // При нажатии b-10 выполняете функцию f10. Функция должна принимать набор set в качестве параметра и выводить его в указанный элемент. Элемент указывается как второй параметр функции f10. Вывод значений - через пробел.
 
-const f10 = (out_set, elem) => { }
+const f10 = (out_set, elem) => {
+    const outputElement = document.querySelector(elem);
+    
+    // Перебираем элементы множества и добавляем их значения в указанный элемент
+    out_set.forEach(value => {
+        outputElement.textContent += value + ' ';
+    });
+};
 
 document.querySelector('.b-10').onclick = () => {
     let a10 = new Set(['4', '5', '6']);
@@ -151,7 +158,7 @@ document.querySelector('.b-10').onclick = () => {
 
 const f11 = () => {
     let s = new Set();
-    s.add([1]);
+    s.add([1, 1]);
     s.add([1]);
     console.log(s);
 }
@@ -164,7 +171,14 @@ document.querySelector('.b-11').onclick = f11;
 let str12 = 'The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children';
 
 const f12 = () => {
+    // Преобразовываем строку в массив букв
+    const lettersArray = str12.split('');
 
+    // Создаем набор на основе массива
+    const lettersSet = new Set(lettersArray);
+
+    // Возвращаем полученный набор
+    return lettersSet;
 }
 
 document.querySelector('.b-12').onclick = () => {
@@ -172,16 +186,26 @@ document.querySelector('.b-12').onclick = () => {
 }
 
 // Task 13
-//  При нажатии b-13 выполняете функцию f13. Функция должна преобразовать строку str13 в массив, причем каждая буква - отдельный элемент массива. Потом создать набор на основе массива. Затем, перебирая набор поэлементам, найти сколько раз каждый символ встречается в исходном массиве. Результат - в виде объекта типа { символ : количество, символ : количество } вывести в консоль и возвратить.
-// пример результата для строки 'Hello ho'
-// { "H" : 1, 'e' : 1, 'l' : 2, "o" : 2, " ": 1}
-
 let str13 = 'The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children';
 
-
 const f13 = () => {
+    const lettersArray = str13.split('');
+    const lettersSet = new Set(lettersArray);
+    
+    // Используем reduce для создания объекта с подсчетом повторений каждого символа
+    const countObject = Array.from(lettersSet).reduce((acc, char) => {
+        // Подсчитываем количество повторений каждого символа в массиве
+        const count = lettersArray.filter(c => c === char).length;
+        // Записываем результат в объект
+        acc[char] = count;
+        return acc;
+    }, {});
 
-    // return
+    // Выводим результат в консоль
+    console.log(countObject);
+
+    // Возвращаем объект с подсчетом
+    return countObject;
 }
 
 document.querySelector('.b-13').onclick = () => {
