@@ -26,7 +26,7 @@
 
 14 Практика по массивам - получаем прогноз погоды по API (сделать дизайн)!!!
 
-15 Set в JavaScript
+15 Set в JavaScript Done
 
 16 Перебор массивов: for, for in, for of
 
