@@ -5,11 +5,7 @@ let a1 = [5,7,9, 11, 13, 15];
 
 function f1() {
     for (let i = 0; i < array.length; i++) {
-        let out = document.querySelector('.out');
         
-        if () {
-            
-        }
     }
 }
 
