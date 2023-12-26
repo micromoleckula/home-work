@@ -1,12 +1,14 @@
 // Task 1
 //При нажатии .b-1 выполняете функцию f1. Функция перебирает массив a1  c помощью цикла for (let i. Выведите на страницу в .out-1 формате значение+пробел.
 
-let a1 = [5,7,9, 11, 13, 15];
+let a1 = [5, 7, 9, 11, 13, 15];
 
 function f1() {
-    for (let i = 0; i < array.length; i++) {
-        
+    let out = '';
+    for (let i = 0; i < a1.length; i++) {
+        out += a1[i] + ' ';;
     }
+    document.querySelector('.out-1').textContent = out;
 }
 
 document.querySelector('.b-1').addEventListener('click', f1);
@@ -17,7 +19,11 @@ document.querySelector('.b-1').addEventListener('click', f1);
 let a2 = [5,7,9, 11, 13, 15];
 
 function f2() {
-
+    let out = '';
+    for (let i = 0; i < a2.length; i++) {
+        out += i + ' ' + a2[i] + ' ';;
+    }
+    document.querySelector('.out-2').textContent = out;
 }
 
 document.querySelector('.b-2').addEventListener('click', f2);
