@@ -42,10 +42,14 @@ document.querySelector('.b-3').addEventListener('click', f3);
 //При нажатии .b-4 выполняете функцию f4. Функция получает div.out-4 со страницы с помощью querySelectorAll и в каждый дописывает число 4.
 
 function f4() {
-
+    let out = document.querySelectorAll('.out-4');
+    for (const i of out) {
+        i.textContent += 4;
+    }
 }
 
 document.querySelector('.b-4').addEventListener('click', f4);
+;
 
 // Task 5
 //При нажатии .b-5 выполняете функцию f5. Функция должна с помощью for of перебрать массив a5 и возвратить новый массив куда входят элементы из a5 большие 7.
