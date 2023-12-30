@@ -76,7 +76,13 @@ document.querySelector('.b-5').addEventListener('click', ()=> {
 let a6 = [[1,2], [3,4], [5,6]];
 
 function f6() {
-
+    let out = [];
+    for (let i = 0; i < a6.length; i++) {
+        for (const a66 of a6[i]) {
+            out.push(a66);
+        }
+    }
+    document.querySelector('.out-6').innerHTML = out.join(' ');
 }
 
 document.querySelector('.b-6').addEventListener('click', f6);
