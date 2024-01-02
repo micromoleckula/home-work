@@ -93,14 +93,20 @@ document.querySelector('.b-6').addEventListener('click', f6);
 // Task 7
 //При нажатии .b-7 выполняете функцию f7. Функция должна переиндексировать массив a7. Что имеется ввиду. Сейчас у нас обычный массив, который содержит вложенные объекты. Вам необходимо сделать из a7 объект, где ключи - значения id из вложенных массивов, а значения - имя (т.е { 23 : Ivan, 45 : Petr}. Функция должна возвращать результирующий массив.
 
-let a7 = [{ id : 23, name: 'Ivan'}, {id: 45, name : 'Petr'}];
+let a7 = [{ id: 23, name: 'Ivan' }, { id: 45, name: 'Petr' }];
 
 function f7() {
-
+    let result = {};
+    for (let i = 0; i < a7.length; i++) {
+        let currentItem = a7[i];
+        result[currentItem.id] = currentItem.name;
+    }
+    console.log(result); // Добавлено для отладки, можно удалить
+    return result;
 }
 
-document.querySelector('.b-7').addEventListener('click', ()=>{
-    console.log(f7());
+document.querySelector('.b-7').addEventListener('click', ()=> {
+    document.querySelector('.out-7').innerHTML = f7();
 });
 
 
