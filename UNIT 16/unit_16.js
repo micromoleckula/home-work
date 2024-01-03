@@ -116,7 +116,15 @@ document.querySelector('.b-7').addEventListener('click', ()=> {
 let a8 = [ { id : 23, name: 'Ivan'}, {id: 45, name : 'Petr'}];
 
 function f8() {
-
+    let result = {};
+    for (let i = 0; i < a8.length; i++) {
+        if (a8[i]) {
+            let currentItem = a8[i];
+            result[currentItem.id] = currentItem.name;
+        }
+    }
+    console.log(result); // Добавлено для отладки, можно удалить
+    return result;
 }
 
 document.querySelector('.b-8').addEventListener('click', ()=>{
