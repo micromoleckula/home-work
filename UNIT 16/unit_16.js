@@ -5,7 +5,7 @@ let a1 = [5, 7, 9, 11, 13, 15];
 
 function f1() {
     let out = '';
-    for (let i = 0; i < a1.length; i++) {
+    for (let i in a1) {
         out += a1[i] + ' ';;
     }
     document.querySelector('.out-1').textContent = out;
@@ -20,7 +20,7 @@ let a2 = [5,7,9, 11, 13, 15];
 
 function f2() {
     let out = '';
-    for (let i = 0; i < a2.length; i++) {
+    for (let i in a2) {
         out += i + ' ' + a2[i] + ' ';;
     }
     document.querySelector('.out-2').textContent = out;
@@ -33,7 +33,7 @@ document.querySelector('.b-2').addEventListener('click', f2);
 
 function f3() {
     let elements = document.getElementsByClassName('out-3');
-    for(let i = 0; i < elements.length; i++) {
+    for(let i in a3) {
         elements[i].innerHTML = '3';
     }
 }
@@ -80,7 +80,7 @@ let a6 = [[1,2], [3,4], [5,6]];
 
 function f6() {
     let out = [];
-    for (let i = 0; i < a6.length; i++) {
+    for (let i in a6) {
         for (const a66 of a6[i]) {
             out.push(a66);
         }
@@ -97,9 +97,8 @@ let a7 = [{ id: 23, name: 'Ivan' }, { id: 45, name: 'Petr' }];
 
 function f7() {
     let result = {};
-    for (let i = 0; i < a7.length; i++) {
-        let currentItem = a7[i];
-        result[currentItem.id] = currentItem.name;
+    for (const i7 of a7) {
+        result[i7.id] = i7.name;
     }
     console.log(result); // Добавлено для отладки, можно удалить
     return result;
@@ -116,14 +115,10 @@ document.querySelector('.b-7').addEventListener('click', ()=> {
 let a8 = [ { id : 23, name: 'Ivan'}, {id: 45, name : 'Petr'}];
 
 function f8() {
-    let result = {};
-    for (let i = 0; i < a8.length; i++) {
-        if (a8[i]) {
-            let currentItem = a8[i];
-            result[currentItem.id] = currentItem.name;
-        }
-    }
-    console.log(result); // Добавлено для отладки, можно удалить
+    let result = [];
+    for (const i8 of a8) {
+        result.push(i8.id);
+    } 
     return result;
 }
 
@@ -137,7 +132,14 @@ document.querySelector('.b-8').addEventListener('click', ()=>{
 let a9 = [ [4,3,2], [2,5], [0,0,0,0,0]];
 
 function f9() {
-
+    let ii9 = -1;
+    for (const i9 of a9) {
+        let currIndex = i9.length - 1;
+        if (currIndex > ii9) {
+            ii9 = currIndex;
+        }
+    }
+    return ii9;
 }
 
 document.querySelector('.b-9').addEventListener('click', ()=>{
