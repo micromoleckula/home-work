@@ -152,7 +152,17 @@ document.querySelector('.b-9').addEventListener('click', ()=>{
 let a10 = [4, 6, 9, 'Hello'];
 
 function f10() {
+    // Создаем пустой ассоциативный массив
+    let associativeArray = {};
 
+    // Проходим по элементам массива a10
+    for (let i in a10) {
+        // Присваиваем ключ и значение в ассоциативный массив
+        associativeArray[a10[i]] = a10[i];
+    }
+
+    // Возвращаем полученный ассоциативный массив
+    return associativeArray;
 }
 
 document.querySelector('.b-10').addEventListener('click', () => {
@@ -170,7 +180,13 @@ let a11 = {
 }
 
 function f11() {
-
+    let num = '';
+    for (const key in a11) {
+        if (a11[key] > 10) {
+            num += a11[key] + ' ';
+        }
+    }
+    document.querySelector('.out-11').textContent = num;
 }
 
 document.querySelector('.b-11').addEventListener('click', f11);
@@ -181,7 +197,11 @@ document.querySelector('.b-11').addEventListener('click', f11);
 let a12 = [4,5,6,7];
 
 function f12() {
-
+    let num = '';
+    for (const key in a12) {
+        num += a12[key] + ' ';
+    }
+    document.querySelector('.out-12').textContent = num;
 }
 
 document.querySelector('.b-12').addEventListener('click', f12);
@@ -193,7 +213,11 @@ document.querySelector('.b-12').addEventListener('click', f12);
 let a13 = 'testone';
 
 function f13() {
-
+    let num = '';
+    for (const key of a13) {
+        num += key + ' ';
+    }
+    document.querySelector('.out-13').textContent = num;
 }
 
 document.querySelector('.b-13').addEventListener('click', f13);
@@ -206,7 +230,11 @@ document.querySelector('.b-13').addEventListener('click', f13);
 let a14 = new Set([4,5,6]);
 
 function f14() {
-
+    let num = '';
+    for (const key of a14) {
+        num += key + ' ';
+    }
+    document.querySelector('.out-14').textContent = num;
 }
 
 document.querySelector('.b-14').addEventListener('click', f14);
@@ -216,7 +244,13 @@ document.querySelector('.b-14').addEventListener('click', f14);
 
 
 function f15() {
+    let nodeList = document.querySelectorAll('.out-15');
 
+    // Перебираем полученную коллекцию элементов и устанавливаем внутрь каждого число 15
+    for (const element of nodeList) {
+        element.textContent = '15';
+    }
 }
 
 document.querySelector('.b-15').addEventListener('click', f15);
+
