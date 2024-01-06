@@ -28,7 +28,7 @@
 
 15 Set в JavaScript Done
 
-16 Перебор массивов: for, for in, for of
+16 Перебор массивов: for, for in, for of Done
 
 17 Методы массивов: map, filter ( часть 1)
 
