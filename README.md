@@ -30,7 +30,7 @@
 
 16 Перебор массивов: for, for in, for of Done
 
-17 Методы массивов: map, filter ( часть 1)
+17 Методы массивов: map, filter ( часть 1) 
 
 18 Методы массивов: join, split, forEach ( часть 2)
 
