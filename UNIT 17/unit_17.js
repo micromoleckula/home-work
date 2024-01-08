@@ -33,7 +33,10 @@ document.querySelector('.b-1').onclick = () => {
 let a2 = [2,3,4,5,10,11,12];
 
 function t2() {
-
+    a2_res = a2.map(elem => {
+        return Math.pow(elem, 2)
+    });
+    return a2_res
 }
 
 document.querySelector('.b-2').onclick = () => {
