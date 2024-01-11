@@ -34,7 +34,7 @@ let a2 = [2,3,4,5,10,11,12];
 
 function t2() {
     a2_res = a2.map(elem => {
-        return Math.pow(elem, 2)
+        return Math.pow(elem, 2);
     });
     return a2_res
 }
@@ -68,7 +68,7 @@ document.querySelector('.b-3').onclick = () => {
 let a4 = [4,"3",6,7,"12",34,"56",78,90,11];
 
 function t4() {
-
+    a4_res = a4
 }
 
 document.querySelector('.b-4').onclick = () => {
