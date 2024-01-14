@@ -107,7 +107,7 @@ document.querySelector('.b-5').onclick = () => {
 let b6 = [3, 14, 15, 92, "6", "5", "hello", 32];
 
 function t6() {
-
+    let b6_res = b
 }
 
 document.querySelector('.b-6').onclick = () => {
