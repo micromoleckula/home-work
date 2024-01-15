@@ -107,7 +107,10 @@ document.querySelector('.b-5').onclick = () => {
 let b6 = [3, 14, 15, 92, "6", "5", "hello", 32];
 
 function t6() {
-    let b6_res = b
+    let b6_res = b6.filter(elem => {
+        return typeof elem === 'number' && !isNaN(elem);
+    })
+    return b6_res;
 }
 
 document.querySelector('.b-6').onclick = () => {
@@ -121,7 +124,10 @@ document.querySelector('.b-6').onclick = () => {
 let b7 = ["php-7", "html", "css", 92, "6", "5", "hello", 32];
 
 function t7() {
-
+    let b7_res = b7.filter(elem => {
+        return typeof elem === 'string' && elem.length > 3;
+    });
+    return b7_res;
 }
 
 document.querySelector('.b-7').onclick = () => {
