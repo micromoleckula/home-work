@@ -140,8 +140,7 @@ document.querySelector('.b-7').onclick = () => {
 let b8 = [3, 14, 15, 92, "6", "5", "hello", 32];
 
 function t8() {
-    let b8_res = b8
-        .map((elem, index) => ({ elem, index })) // Создаем объекты с элементом и его индексом
+    let b8_res = b8.map((elem, index) => ({ elem, index })) // Создаем объекты с элементом и его индексом
         .filter(obj => typeof obj.elem === 'number' && obj.elem % 2 === 0) // Фильтруем четные числа
         .map(obj => obj.index); // Оставляем только индексы
 
@@ -160,7 +159,12 @@ document.querySelector('.b-8').onclick = () => {
 let b9 = [3, "hello", 4, "world", 5, "hi"];
 
 function t9() {
-
+    let b9_string = b9.filter(elem => {
+        return typeof elem === 'string';
+    })
+    let b9_num = b9.filter(elem => {
+        return typeof elem === 'number';
+    })
     return [b9_num, b9_string];
 }
 
@@ -176,8 +180,16 @@ document.querySelector('.b-9').onclick = () => {
 let b10 = [ [1,2,3], [3,4,6], [4,5,7], [8,9,3]]
 
 function t10() {
-
-
+    let ret = [];
+    let b10_res = b10.filter(elem => {
+        for (const i in elem) {
+            if (elem[i] === 3) {
+                ret += elem;
+                return ret;
+            }
+        }
+    })
+    return b10_res
 }
 
 document.querySelector('.b-10').onclick = () => {
