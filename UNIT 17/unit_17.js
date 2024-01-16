@@ -140,7 +140,12 @@ document.querySelector('.b-7').onclick = () => {
 let b8 = [3, 14, 15, 92, "6", "5", "hello", 32];
 
 function t8() {
+    let b8_res = b8
+        .map((elem, index) => ({ elem, index })) // Создаем объекты с элементом и его индексом
+        .filter(obj => typeof obj.elem === 'number' && obj.elem % 2 === 0) // Фильтруем четные числа
+        .map(obj => obj.index); // Оставляем только индексы
 
+    return b8_res;
 }
 
 document.querySelector('.b-8').onclick = () => {
