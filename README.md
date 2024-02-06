@@ -32,7 +32,7 @@
 
 17 Методы массивов: map, filter ( часть 1) Done
 
-18 Методы массивов: join, split, forEach ( часть 2)
+18 Методы массивов: join, split, forEach ( часть 2) Done 90%/100%
 
 19 События мыши в JavaScript
 
