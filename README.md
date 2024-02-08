@@ -34,7 +34,7 @@
 
 18 Методы массивов: join, split, forEach ( часть 2) Done 90%/100%
 
-19 События мыши в JavaScript
+19 События мыши в JavaScript Done
 
 20 События клавиатуры в JavaScript
 
