@@ -115,13 +115,15 @@ function onchangeeighteen() {
 
 //19
 document.querySelector('.b-19').onclick = (event) => {
+
   event.preventDefault();
   document.querySelector('.out-19').innerHTML = 
   document.querySelector('.i-191').value + ", " + document.querySelector('.i-192').value;
 }
 
 //20
-document.querySelector('.b-20').onclick = (event) => { 
+document.querySelector('.b-20').onclick = (event) => {
+  
   event.preventDefault();
   let text20 = document.querySelector('input[name="text-input"]').value;
   let pass20 = document.querySelector('input[name="password-input"]').value;
